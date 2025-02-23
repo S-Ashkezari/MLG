@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: content/chap01_intro_and_basics
+- file: content/chap02-IntroductionToNetworkX
+- file: content/chap03Graph Data Representation
