@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/chap02-IntroductionToNetworkX';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Chapter 3: Graph Data Representation and Processing" href="chap03Graph%20Data%20Representation.html" />
+    <link rel="next" title="Chapter 3: Graph Data Representation and Processing" href="chap03-Graph%20Data%20Representation.html" />
     <link rel="prev" title="Chapter 1: Introduction to Graphs and Machine Learning" href="chap01_intro_and_basics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -171,8 +171,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="chap01_intro_and_basics.html">Chapter 1: Introduction to Graphs and Machine Learning</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 2: Introduction to NetworkX</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="chap03Graph%20Data%20Representation.html">Chapter 3: Graph Data Representation and Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap03-Graph%20Data%20Representation.html">Chapter 3: Graph Data Representation and Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap04-node_embeddings.html">Chapter 4: Node Embeddings in Graph Machine Learning</a></li>
 </ul>
 
     </div>
@@ -365,22 +365,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 2: Introduction to NetworkX</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-networkx">1. What is NetworkX?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-visualizing-graphs">2. Creating and Visualizing Graphs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-attributes-and-properties">3. Graph Attributes and Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-traversal-and-algorithms">4. Graph Traversal and Algorithms</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#real-world-applications-of-networkx">5. Real-World Applications of NetworkX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. What is NetworkX?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Creating and Visualizing Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Graph Attributes and Properties</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Graph Traversal and Algorithms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Real-World Applications of NetworkX</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -393,28 +383,14 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-introduction-to-networkx">
 <h1>Chapter 2: Introduction to NetworkX<a class="headerlink" href="#chapter-2-introduction-to-networkx" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
 <section id="what-is-networkx">
 <h2>1. What is NetworkX?<a class="headerlink" href="#what-is-networkx" title="Link to this heading">#</a></h2>
-</section>
-<section id="creating-and-visualizing-graphs">
-<h2>2. Creating and Visualizing Graphs<a class="headerlink" href="#creating-and-visualizing-graphs" title="Link to this heading">#</a></h2>
-</section>
-<section id="graph-attributes-and-properties">
-<h2>3. Graph Attributes and Properties<a class="headerlink" href="#graph-attributes-and-properties" title="Link to this heading">#</a></h2>
-</section>
-<section id="graph-traversal-and-algorithms">
-<h2>4. Graph Traversal and Algorithms<a class="headerlink" href="#graph-traversal-and-algorithms" title="Link to this heading">#</a></h2>
-</section>
-<section id="real-world-applications-of-networkx">
-<h2>5. Real-World Applications of NetworkX<a class="headerlink" href="#real-world-applications-of-networkx" title="Link to this heading">#</a></h2>
-</section>
-<section id="id1">
-<h2>1. What is NetworkX?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>NetworkX is a Python library designed for the creation, manipulation, and study of complex networks and graphs.
 It supports various graph types (directed, undirected, weighted, multi-graphs) and provides tools for visualization, analysis, and computation.</p>
 </section>
-<section id="id2">
-<h2>2. Creating and Visualizing Graphs<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="creating-and-visualizing-graphs">
+<h2>2. Creating and Visualizing Graphs<a class="headerlink" href="#creating-and-visualizing-graphs" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
@@ -440,12 +416,12 @@ It supports various graph types (directed, undirected, weighted, multi-graphs) a
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6666d4b318caab402728780dac44bf0871f1785024b15cde7ad122bc958cac5d.png" src="../_images/6666d4b318caab402728780dac44bf0871f1785024b15cde7ad122bc958cac5d.png" />
+<img alt="../_images/31b509abb7f799a1541ea1b06ae4d32b0fc123240caf9b7eeb5c6bf119e90aa0.png" src="../_images/31b509abb7f799a1541ea1b06ae4d32b0fc123240caf9b7eeb5c6bf119e90aa0.png" />
 </div>
 </div>
 </section>
-<section id="id3">
-<h2>3. Graph Attributes and Properties<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="graph-attributes-and-properties">
+<h2>3. Graph Attributes and Properties<a class="headerlink" href="#graph-attributes-and-properties" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adding attributes to nodes and edges</span>
@@ -472,8 +448,8 @@ Number of edges: 5
 </div>
 </div>
 </section>
-<section id="id4">
-<h2>4. Graph Traversal and Algorithms<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="graph-traversal-and-algorithms">
+<h2>4. Graph Traversal and Algorithms<a class="headerlink" href="#graph-traversal-and-algorithms" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Breadth-First Search (BFS)</span>
@@ -517,23 +493,20 @@ Number of edges: 5
 </div>
 </div>
 </section>
-<section id="id5">
-<h2>5. Real-World Applications of NetworkX<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="real-world-applications-of-networkx">
+<h2>5. Real-World Applications of NetworkX<a class="headerlink" href="#real-world-applications-of-networkx" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Social Network Analysis: Identifying communities and influencers</p></li>
 <li><p>Bioinformatics: Analyzing protein interactions</p></li>
 <li><p>Transportation Networks: Finding shortest routes</p></li>
 <li><p>Recommendation Systems: Suggesting friends, products, or content</p></li>
 </ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conclusion">
-<h1>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h1>
 <p>✅ We introduced NetworkX and its capabilities.</p>
 <p>✅ We created and visualized graphs in Python.</p>
 <p>✅ We explored node and edge attributes.</p>
 <p>✅ We implemented BFS traversal and shortest path computation.</p>
 <p>✅ We discussed real-world applications of NetworkX.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -576,7 +549,7 @@ Number of edges: 5
       </div>
     </a>
     <a class="right-next"
-       href="chap03Graph%20Data%20Representation.html"
+       href="chap03-Graph%20Data%20Representation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -601,22 +574,12 @@ Number of edges: 5
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 2: Introduction to NetworkX</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-networkx">1. What is NetworkX?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-visualizing-graphs">2. Creating and Visualizing Graphs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-attributes-and-properties">3. Graph Attributes and Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-traversal-and-algorithms">4. Graph Traversal and Algorithms</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#real-world-applications-of-networkx">5. Real-World Applications of NetworkX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. What is NetworkX?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Creating and Visualizing Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Graph Attributes and Properties</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Graph Traversal and Algorithms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Real-World Applications of NetworkX</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -640,7 +603,7 @@ By Soheila Ashkezari-T.
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

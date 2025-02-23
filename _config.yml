@@ -1,18 +1,11 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-<<<<<<< HEAD
-title: Machine Learning with Graph
-author: Soheila Ashkezari-T.
-logo: logo.png
-copyright: "© Copyright 2025"
-
-=======
 title: Machine Learning With Graph
 author: Soheila Ashkezari-T.
 logo: logo.png
-copyright: "© Copyright 2025, Soheila Ashkezari-T."
->>>>>>> dd60f64 (chap 1 -4 updated)
+copyright: "2025"
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -29,11 +22,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-<<<<<<< HEAD
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-=======
   url: https://s-ashkezari.github.io/MLG/intro.html  # Online location of your book
->>>>>>> dd60f64 (chap 1 -4 updated)
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 

@@ -171,8 +171,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1: Introduction to Graphs and Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chap02-IntroductionToNetworkX.html">Chapter 2: Introduction to NetworkX</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="chap03Graph%20Data%20Representation.html">Chapter 3: Graph Data Representation and Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap03-Graph%20Data%20Representation.html">Chapter 3: Graph Data Representation and Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap04-node_embeddings.html">Chapter 4: Node Embeddings in Graph Machine Learning</a></li>
 </ul>
 
     </div>
@@ -372,13 +372,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-machine-learning">5. Overview of Machine Learning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connection-between-machine-learning-and-graphs">6. Connection Between Machine Learning and Graphs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-introduction-to-networkx-and-graph-creation-in-python">7. Practical: Introduction to NetworkX and Graph Creation in Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Difference Between Tabular and Graph Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Why Are Graphs Important in Machine Learning?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Introduction to Structured Data in Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Definition of Graphs and Basic Concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Overview of Machine Learning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6. Connection Between Machine Learning and Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">7. Practical: Introduction to NetworkX and Graph Creation in Python</a></li>
 </ul>
             </nav>
         </div>
@@ -392,30 +385,9 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-introduction-to-graphs-and-machine-learning">
 <h1>Chapter 1: Introduction to Graphs and Machine Learning<a class="headerlink" href="#chapter-1-introduction-to-graphs-and-machine-learning" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
 <section id="difference-between-tabular-and-graph-data">
 <h2>1. Difference Between Tabular and Graph Data<a class="headerlink" href="#difference-between-tabular-and-graph-data" title="Link to this heading">#</a></h2>
-</section>
-<section id="why-are-graphs-important-in-machine-learning">
-<h2>2. Why Are Graphs Important in Machine Learning?<a class="headerlink" href="#why-are-graphs-important-in-machine-learning" title="Link to this heading">#</a></h2>
-</section>
-<section id="introduction-to-structured-data-in-graphs">
-<h2>3. Introduction to Structured Data in Graphs<a class="headerlink" href="#introduction-to-structured-data-in-graphs" title="Link to this heading">#</a></h2>
-</section>
-<section id="definition-of-graphs-and-basic-concepts">
-<h2>4. Definition of Graphs and Basic Concepts<a class="headerlink" href="#definition-of-graphs-and-basic-concepts" title="Link to this heading">#</a></h2>
-</section>
-<section id="overview-of-machine-learning">
-<h2>5. Overview of Machine Learning<a class="headerlink" href="#overview-of-machine-learning" title="Link to this heading">#</a></h2>
-</section>
-<section id="connection-between-machine-learning-and-graphs">
-<h2>6. Connection Between Machine Learning and Graphs<a class="headerlink" href="#connection-between-machine-learning-and-graphs" title="Link to this heading">#</a></h2>
-</section>
-<section id="practical-introduction-to-networkx-and-graph-creation-in-python">
-<h2>7. Practical: Introduction to NetworkX and Graph Creation in Python<a class="headerlink" href="#practical-introduction-to-networkx-and-graph-creation-in-python" title="Link to this heading">#</a></h2>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h2>1. Difference Between Tabular and Graph Data<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>Tabular data consists of structured features for each instance, typically stored in a DataFrame.
 In contrast, graph data models complex relationships between instances, useful in various domains like social networks, recommender systems, and bioinformatics.</p>
 <div class="cell docutils container">
@@ -459,12 +431,12 @@ In contrast, graph data models complex relationships between instances, useful i
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/408f8aa48b0b15b2d07da65b09ee02b5dba568e1555421624f7c3f85fa807941.png" src="../_images/408f8aa48b0b15b2d07da65b09ee02b5dba568e1555421624f7c3f85fa807941.png" />
+<img alt="../_images/49759070668b450a93ff467aaec822a4ecdd26ce8cb377ff85cfd00bb27e3438.png" src="../_images/49759070668b450a93ff467aaec822a4ecdd26ce8cb377ff85cfd00bb27e3438.png" />
 </div>
 </div>
 </section>
-<section id="id2">
-<h2>2. Why Are Graphs Important in Machine Learning?<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="why-are-graphs-important-in-machine-learning">
+<h2>2. Why Are Graphs Important in Machine Learning?<a class="headerlink" href="#why-are-graphs-important-in-machine-learning" title="Link to this heading">#</a></h2>
 <p>Key applications of graph-based machine learning:</p>
 <ul class="simple">
 <li><p>Social networks: Identifying influential users, friend recommendations, spam detection.</p></li>
@@ -472,16 +444,21 @@ In contrast, graph data models complex relationships between instances, useful i
 <li><p>Recommender systems: Suggesting similar products based on user behavior.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>3. Introduction to Structured Data in Graphs<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="introduction-to-structured-data-in-graphs">
+<h2>3. Introduction to Structured Data in Graphs<a class="headerlink" href="#introduction-to-structured-data-in-graphs" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Static Data: Graphs that do not change, e.g., transportation networks.</p></li>
 <li><p>Dynamic Data: Graphs that evolve over time, e.g., social networks.</p></li>
-<li><p>Heterogeneous Data: Graphs with multiple types of nodes and edges, e.g., biological data.</p></li>
 </ul>
+<p><img alt="image.png" src="content/attachment:7fff61ef-69da-4445-8e2b-57745b540eeb.png" /></p>
+<ul class="simple">
+<li><p>Heterogeneous Data: Graphs with multiple types of nodes and edges, e.g., biological data.</p></li>
+<li></li>
+</ul>
+<p><img alt="image.png" src="content/attachment:87bd0d4f-f95f-4b92-94ac-2099ff5df70e.png" /></p>
 </section>
-<section id="id4">
-<h2>4. Definition of Graphs and Basic Concepts<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="definition-of-graphs-and-basic-concepts">
+<h2>4. Definition of Graphs and Basic Concepts<a class="headerlink" href="#definition-of-graphs-and-basic-concepts" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Node (Vertex): Represents an entity (user, product, protein, etc.).</p></li>
 <li><p>Edge: Represents a relationship between two nodes (friendship, interaction, protein-protein connection).</p></li>
@@ -494,16 +471,16 @@ In contrast, graph data models complex relationships between instances, useful i
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>5. Overview of Machine Learning<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="overview-of-machine-learning">
+<h2>5. Overview of Machine Learning<a class="headerlink" href="#overview-of-machine-learning" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Supervised Learning: Data is labeled (classification, regression).</p></li>
 <li><p>Unsupervised Learning: No labels (clustering, dimensionality reduction).</p></li>
 <li><p>Semi-Supervised Learning: A mix of labeled and unlabeled data.</p></li>
 </ul>
 </section>
-<section id="id6">
-<h2>6. Connection Between Machine Learning and Graphs<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="connection-between-machine-learning-and-graphs">
+<h2>6. Connection Between Machine Learning and Graphs<a class="headerlink" href="#connection-between-machine-learning-and-graphs" title="Link to this heading">#</a></h2>
 <p>Graphs help model structural information, improving ML model accuracy.
 Examples:</p>
 <ul class="simple">
@@ -511,8 +488,8 @@ Examples:</p>
 <li><p>Node representation learning using Node2Vec and Graph Neural Networks (GNNs).</p></li>
 </ul>
 </section>
-<section id="id7">
-<h2>7. Practical: Introduction to NetworkX and Graph Creation in Python<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="practical-introduction-to-networkx-and-graph-creation-in-python">
+<h2>7. Practical: Introduction to NetworkX and Graph Creation in Python<a class="headerlink" href="#practical-introduction-to-networkx-and-graph-creation-in-python" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a more complex graph with additional attributes</span>
@@ -532,7 +509,7 @@ Examples:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/73d8d7c9c807605f76f7c3bec63b34916913029938fcb7b540520e3dc10c6f56.png" src="../_images/73d8d7c9c807605f76f7c3bec63b34916913029938fcb7b540520e3dc10c6f56.png" />
+<img alt="../_images/1be53807ce8e0ec8b3b94e6278a3941ce7de7e5ab7dadc72106878bdf1b70107.png" src="../_images/1be53807ce8e0ec8b3b94e6278a3941ce7de7e5ab7dadc72106878bdf1b70107.png" />
 </div>
 </div>
 <p>✅ In this chapter, we discussed the difference between tabular and graph data.</p>
@@ -614,13 +591,6 @@ Examples:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-machine-learning">5. Overview of Machine Learning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connection-between-machine-learning-and-graphs">6. Connection Between Machine Learning and Graphs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-introduction-to-networkx-and-graph-creation-in-python">7. Practical: Introduction to NetworkX and Graph Creation in Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Difference Between Tabular and Graph Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Why Are Graphs Important in Machine Learning?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Introduction to Structured Data in Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Definition of Graphs and Basic Concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Overview of Machine Learning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6. Connection Between Machine Learning and Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">7. Practical: Introduction to NetworkX and Graph Creation in Python</a></li>
 </ul>
   </nav></div>
 
@@ -645,7 +615,7 @@ By Soheila Ashkezari-T.
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>
